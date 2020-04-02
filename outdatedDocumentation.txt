@@ -1,0 +1,30 @@
+# App Development
+
+~~Base Code~~
+addApplication({
+  game:()=>{
+    //looping code here
+  },
+  options:{
+    //options on how you want your program to boot
+  },
+  stored:{
+    //custom variables which will simply be refered to by their name
+  }
+})
+
+#Process Properties
+properties - hold any data that applications need to store in memory
+  {*}
+clickBox - defines the area where a click is given to a certain program
+  {x:*,y:*,width:*,height:*}
+onPressed - is a function called when mouse is clicked on the process (requires having clickBox property)
+  ()=>{*}
+onReleased - is a function called when mouse is clicked on the process (requires having clickBox property)
+    ()=>{*}
+id - a name for the process (an easy way to remember it)
+  *
+render - called every frame, can be used for rendering, but can also be just scripting
+  ()=>{*}
+init - a small part of the script called once when the process is first created
+  ()=>{*}

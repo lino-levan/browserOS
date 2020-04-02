@@ -1,0 +1,21 @@
+{
+  app:()=>{
+    background(random(0,255),random(0,255),random(0,255));
+    fill(random(0,255),random(0,255),random(0,255));
+    rect(125,125,150,150);
+    fill(random(0,255),random(0,255),random(0,255));
+    rect(0,0,150,150);
+    fill(random(0,255),random(0,255),random(0,255));
+    rect(249,249,150,150);
+    fill(random(0,255),random(0,255),random(0,255));
+    rect(249,0,150,150);
+    fill(random(0,255),random(0,255),random(0,255));
+    rect(0,249,150,150);
+  },
+  init:()=>{
+    own.properties.width=400;
+    own.properties.height=400;
+    own.properties.preferred={width:400,height:400,noResize:true};
+  },
+  id:"stroke"
+}
